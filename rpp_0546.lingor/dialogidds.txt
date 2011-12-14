@@ -1,0 +1,25 @@
+Bellow are the assigned IDD's:
+0 - Inventory
+1 - Interactions
+2 - DB system
+3 - Animations
+4 - Stats
+5 - Banks
+6 - ATM's
+7 - Wallet
+8 - Shops
+9 - Licenses
+10 - Trunk
+11 - Generic
+12 - Factories
+13 - Gas stations
+14 - Corporations
+15 - Stock Market
+16 - Phones
+17 - Player Shops
+18 - Wanted Menu
+19 - Speed Cameras
+20 - Say Texts
+21 - Workplaces
+22 - Employee
+23 - Import/Export

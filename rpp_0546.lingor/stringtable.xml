@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="TNL">
+	<Mission>
+		<Key ID="STRM_MISSION_NAME">
+			<English>The Roleplay Project (Developer Version)</English>
+		</Key>
+		<Key ID="STRM_MISSION_DESC">
+			<English>Roleplaying mission (32 players)</English>
+		</Key>
+		<Key ID="STRS_mission_longDesc">
+			<English>&lt;t font='Zeppelin33'&gt;The Roleplay Project&lt;/t&gt; is a new roleplay mod for ARMA2. Visit us at rp-project.net</English>
+		</Key>
+	</Mission>
+	
+	<Core>
+		<Key ID="STRS_core_debugMsg">
+			<English>&lt;t color='#ff0000' font='Zeppelin33' size='1.3' align='center'&gt;TNL Debugging System&lt;br/&gt;-------------------------&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;An error has occured in one of the mission's scripts!&lt;br/&gt;&lt;br/&gt;The exception code has been copied to your clipboard. Please submit it at &lt;t font='Zeppelin33'&gt;TheNewLife-RPG.com&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;--------------------&lt;br/&gt;&lt;t size='0.5' font='Zeppelin32'&gt;Mission version: %1&lt;br/&gt;File: %2&lt;br/&gt;&lt;br/&gt;Exception:&lt;br/&gt;%3&lt;br/&gt;&lt;/t&gt;--------------------</English>
+		</Key>
+	</Core>
+	
+	<Generic>
+		<Key ID="STRS_gen_btnClose">
+			<English>Close</English>
+		</Key>
+		<Key ID="STRS_gen_btnCancel">
+			<English>Cancel</English>
+		</Key>
+		<Key ID="STRS_gen_btnYes">
+			<English>Yes</English>
+		</Key>
+		<Key ID="STRS_gen_btnNo">
+			<English>No</English>
+		</Key>
+		<Key ID="STRS_gen_btnOk">
+			<English>OK</English>
+		</Key>
+		<Key ID="STRS_gen_btnSave">
+			<English>Save</English>
+		</Key>
+		<Key ID="STRS_gen_you">
+			<English>You</English>
+		</Key>
+		<Key ID="STRS_gen_unlimited">
+			<English>Unlimited</English>
+		</Key>
+		<Key ID="STRS_gen_forbidden">
+			<English>Forbidden</English>
+		</Key>
+		<Key ID="STRS_gen_empty">
+			<English>Empty</English>
+		</Key>
+		<Key ID="STRS_gen_allowed">
+			<English>Allowed</English>
+		</Key>
+		<Key ID="STRS_gen_disallowed">
+			<English>Disallowed</English>
+		</Key>
+	</Generic>
+	
+	<Markers>
+		<Key ID="STRS_markers_discover">
+			<English>You have discovered %1!\nIt will remain on your map now</English>
+		</Key>
+	</Markers>
+	
+	<Goods>
+		<Key ID="STRS_item_test">
+			<English>Test Item</English>
+		</Key>
+		<Key ID="STRS_item_money">
+			<English>Money</English>
+		</Key>
+		<Key ID="STRS_item_bread">
+			<English>Bread</English>
+		</Key>
+		<Key ID="STRS_item_wallet">
+			<English>Wallet</English>
+		</Key>
+		<Key ID="STRS_item_keychain">
+			<English>Key chain</English>
+		</Key>
+		<Key ID="STRS_item_pickaxe">
+			<English>Pickaxe</English>
+		</Key>
+		<Key ID="STRS_item_ironore">
+			<English>Iron Ore</English>
+		</Key>
+		<Key ID="STRS_vcl_skoda">
+			<English>Skoda</English>
+		</Key>
+		<Key ID="STRS_vcl_vazPolice">
+			<English>VAZ-2103 Police</English>
+		</Key>
+		<Key ID="STRS_weapon_m9">
+			<English>M9</English>
+		</Key>
+		<Key ID="STRS_magazine_m9">
+			<English>15Rnd_9x19_M9</English>
+		</Key>
+		<Key ID="STRS_item_desc_test">
+			<English>This is a test object designed for a test!</English>
+		</Key>
+		<Key ID="STRS_item_desc_money">
+			<English>This is your cash, you can use this to purchase things in the mission such as vehicles or items</English>
+		</Key>
+		<Key ID="STRS_item_desc_bread">
+			<English>This is bread, you...erm..eat is :)</English>
+		</Key>
+		<Key ID="STRS_item_desc_wallet">
+			<English>This is your wallet. It's used to store important documents such as license cards, ID docments, etc.</English>
+		</Key>
+		<Key ID="STRS_item_desc_keychain">
+			<English>This is your Key chain. It holds all the keys to your vehicles, using it allows you to drop keys, or use actions for your vehicles if they are near you.</English>
+		</Key>
+		<Key ID="STRS_item_desc_pickaxe">
+			<English>This is a pickaxe. You require this to mine ores like Iron, Silver, Gold, Copper and Coal</English>
+		</Key>
+		<Key ID="STRS_item_desc_ironore">
+			<English>This is Iron ore. It is mined with a pickaxe in chernarus and is quite a common resource, you can smelt the Iron Ore into Iron Lumps at a Smelter</English>
+		</Key>
+		<Key ID="STRS_vcl_desc_skoda">
+			<English>This car is...crappy</English>
+		</Key>
+		<Key ID="STRS_weapon_desc_m9">
+			<English>This is a M9</English>
+		</Key>
+		<Key ID="STRS_magazine_desc_m9">
+			<English>Magazine for the M9</English>
+		</Key>
+		<Key ID="STRS_item_desc_noDesc">
+			<English>No description yet</English>
+		</Key>
+	</Goods>
+	
+	<Shops>
+			<Key ID="STRS_shop_name_exampleshop">
+				<English>Example Item Shop</English>
+			</Key>
+			<Key ID="STRS_shop_purchase">
+				<English>Purchase</English>
+			</Key>
+			<Key ID="STRS_shop_sell">
+				<English>Sell</English>
+			</Key>
+			<Key ID="STRS_purchase_item">
+				<English>You have purchased %1 %2(s) for %3Ц, you have %4Ц remaining</English>
+			</Key>
+			<Key ID="STRS_purchase_cantafford">
+				<English>You can't afford to purchase this</English>
+			</Key>
+			<Key ID="STRS_purchase_requireLicense">
+				<English>You do not have the required license.</English>
+			</Key>
+			<Key ID="STRS_purchase_vehicle">
+				<English>You have purchased a %1 for %2Ц, you have %3Ц remaining</English>
+			</Key>
+			<Key ID="STRS_sell_item">
+				<English>You have sold %1 %2(s) for %3Ц</English>
+			</Key>
+			<Key ID="STRS_sell_notEnough">
+				<English>You don't have enough of %1 to sell %2 of it</English>
+			</Key>
+	</Shops>
+	
+	<Trunk>
+		<Key ID="STRS_trunk_exceedMaxWeight">
+			<English>You cannot do this, it will exceed the max weight of %1kg</English>
+		</Key>
+		<Key ID="STRS_trunk_dropItem">
+			<English>You drop %1 %2(s) into %3</English>
+		</Key>
+		<Key ID="STRS_trunk_notEnoughDrop">
+			<English>You don't have enough of %1 to drop %2 because you only have %3 of it</English>
+		</Key>
+		<Key ID="STRS_trunk_takeItem">
+			<English>You take %1 %2(s) from %3</English>
+		</Key>
+		<Key ID="STRS_trunk_notEnoughTake">
+			<English>There is not enough of %1 to take %2 of it, there is only %3 available</English>
+		</Key>
+	</Trunk>
+	
+	<bank>
+		<Key ID="STRS_bank_welcomeHeader">
+			<English>Welcome to CNB</English>
+		</Key>
+		<Key ID="STRS_bank_inputAccNum">
+			<English>Type in account number</English>
+		</Key>
+		<Key ID="STRS_bank_selectID">
+			<English>Show an ID</English>
+		</Key>
+		<Key ID="STRS_bank_idCards">
+			<English>ID Cards:</English>
+		</Key>
+		<Key ID="STRS_bank_useID">
+			<English>Use this ID</English>
+		</Key>
+		<Key ID="STRS_bank_manageHeader">
+			<English>Manage account #%1</English>
+		</Key>
+		<Key ID="STRS_bank_mainOwner">
+			<English>Main owner</English>
+		</Key>
+		<Key ID="STRS_bank_owner">
+			<English>Owner</English>
+		</Key>
+		<Key ID="STRS_bank_access">
+			<English>Access</English>
+		</Key>
+		<Key ID="STRS_bank_accBalance">
+			<English>Account balance:</English>
+		</Key>
+		<Key ID="STRS_bank_cashOps">
+			<English>Cash operations</English>
+		</Key>
+		<Key ID="STRS_bank_creditTransf">
+			<English>Credit transfer</English>
+		</Key>
+		<Key ID="STRS_bank_amountUpk">
+			<English>Amount (UPK)</English>
+		</Key>
+		<Key ID="STRS_bank_destinationAcc">
+			<English>Destination account #</English>
+		</Key>
+		<Key ID="STRS_bank_history">
+			<English>History</English>
+		</Key>
+		<Key ID="STRS_bank_selectUser">
+			<English>Select a user to view his privilegies.</English>
+		</Key>
+		<Key ID="STRS_bank_canWithdraw">
+			<English>Can withdraw/deposit:</English>
+		</Key>
+		<Key ID="STRS_bank_withdrawLimit">
+			<English>Withdraw/day limit:</English>
+		</Key>
+		<Key ID="STRS_bank_withdrawLimitDesc">
+			<English>Specify the amount of money &lt;t font='Zeppelin33'&gt;%1&lt;/t&gt; can withdraw from your account per one day.</English>
+		</Key>
+		<Key ID="STRS_bank_canWire">
+			<English>Can use credit transfer:</English>
+		</Key>
+		<Key ID="STRS_bank_wireLimit">
+			<English>Credit transfer limit:</English>
+		</Key>
+		<Key ID="STRS_bank_wireLimitDesc">
+			<English>Specify the amount of money &lt;t font='Zeppelin33'&gt;%1&lt;/t&gt; can send from your account to another one using credit transfer.</English>
+		</Key>
+		<Key ID="STRS_bank_selectHistEntry">
+			<English>Select an entry from the list above to view its details.</English>
+		</Key>
+		<Key ID="STRS_bank_ereasedHist">
+			<English>No entries to display.</English>
+		</Key>
+		<Key ID="STRS_bank_histDeleteTitle">
+			<English>Delete history?</English>
+		</Key>
+		<Key ID="STRS_bank_histDeleteMsg">
+			<English>Are you sure you want to fully delete the account's transaction history?</English>
+		</Key>
+		<Key ID="STRS_bank_cashNow">
+			<English>Cash: &lt;t color='#ffffff'&gt;%1&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_bank_balanceNow">
+			<English>Balance: &lt;t color='#ffffff'&gt;%1&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_bank_editLimit">
+			<English>Edit limit</English>
+		</Key>
+		<Key ID="STRS_bank_limitUpdated">
+			<English>Limit updated!</English>
+		</Key>
+		<Key ID="STRS_bank_withdrawLimitUpdated">
+			<English>%1 withdraw limit has been updated to %2.</English>
+		</Key>
+		<Key ID="STRS_bank_withdrawLimitDisabled">
+			<English>%1 withdraw limit has been disabled.</English>
+		</Key>
+		<Key ID="STRS_bank_wireLimitUpdated">
+			<English>%1 credit transfer limit has been updated to %2.</English>
+		</Key>
+		<Key ID="STRS_bank_wireLimitDisabled">
+			<English>%1 credit transfer limit has been disabled.</English>
+		</Key>
+		<Key ID="STRS_bank_accessRemoveHeader">
+			<English>Remove %1?</English>
+		</Key>
+		<Key ID="STRS_bank_accessRemove">
+			<English>Are you sure you want to remove %1 access to your account (#%2)?</English>
+		</Key>
+		<Key ID="STRS_bank_userAddErrorHeader">
+			<English>Cannot add %1!</English>
+		</Key>
+		<Key ID="STRS_bank_userAddNotExists">
+			<English>Sorry, according to the register nobody named '%1' lives in the country.</English>
+		</Key>
+		<Key ID="STRS_bank_userAddInAlready">
+			<English>Sir, it seems Mr. %1 already has access to your account.</English>
+		</Key>
+		<Key ID="STRS_bank_userAddOwnName">
+			<English>Sir, that is your name you filled in.</English>
+		</Key>
+		<Key ID="STRS_bank_userAddOkHeader">
+			<English>%1 added!</English>
+		</Key>
+		<Key ID="STRS_bank_userAddOk">
+			<English>Thank you Sir, %1 now has access to your account.&lt;br/&gt;Please do not forget to change his access details.</English>
+		</Key>
+		
+		<Key ID="STRS_bank_hist_accCreated">
+			<English>%1 - Account created (%2)</English>
+		</Key>
+		<Key ID="STRS_bank_hist_atmWithdraw">
+			<English>%1 - %2 UPK withdrawn by %3 at an ATM (%4)</English>
+		</Key>
+		<Key ID="STRS_bank_hist_atmDeposit">
+			<English>%1 - %2 UPK deposited by %3 at an ATM (%4)</English>
+		</Key>
+		<Key ID="STRS_bank_hist_bankWithdraw">
+			<English>%1 - %2 UPK withdrawn by %3 in %4</English>
+		</Key>
+		<Key ID="STRS_bank_hist_bankDeposit">
+			<English>%1 - %2 UPK deposited by %3 in %4</English>
+		</Key>
+		<Key ID="STRS_bank_hist_wireSent">
+			<English>%1 - %2 UPK sent to account #%3 by %4 (%5)</English>
+		</Key>
+		<Key ID="STRS_bank_hist_wireReceived">
+			<English>%1 - %2 UPK received from account #%3</English>
+		</Key>
+		<Key ID="STRS_bank_hist_requestCard">
+			<English>%1 - Account owner (%2) requested a new credit card for %3</English>
+		</Key>
+		<Key ID="STRS_bank_hist_addUser">
+			<English>%1 - Account owner (%2) added a new user: %3</English>
+		</Key>
+		<Key ID="STRS_bank_hist_removeUser">
+			<English>%1 - Account owner (%2) removed a user: %3</English>
+		</Key>
+		<Key ID="STRS_bank_hist_canWithdrawChangeTrue">
+			<English>%1 - Account owner (%2) changed %3 withdraw rights to: Allowed</English>
+		</Key>
+		<Key ID="STRS_bank_hist_canWithdrawChangeFalse">
+			<English>%1 - Account owner (%2) changed %3 withdraw rights to: Disallowed</English>
+		</Key>
+		<Key ID="STRS_bank_hist_withdrawLimitChange">
+			<English>%1 - Account owner (%2) changed %3 withdraw limit/day to: %4</English>
+		</Key>
+		<Key ID="STRS_bank_hist_withdrawLimitChangeNone">
+			<English>%1 - Account owner (%2) changed %3 withdraw limit/day to: Disabed</English>
+		</Key>
+		<Key ID="STRS_bank_hist_canWireChangeTrue">
+			<English>%1 - Account owner (%2) changed %3 credit transfer rights to: Allowed</English>
+		</Key>
+		<Key ID="STRS_bank_hist_canWireChangeFalse">
+			<English>%1 - Account owner (%2) changed %3 credit transfer rights to: Disallowed</English>
+		</Key>
+		<Key ID="STRS_bank_hist_wireLimitChange">
+			<English>%1 - Account owner (%2) changed %3 credit transfer limit/day to: %4</English>
+		</Key>
+		<Key ID="STRS_bank_hist_wireLimitChangeNone">
+			<English>%1 - Account owner (%2) changed %3 credit transfer limit/day to: Disabled</English>
+		</Key>
+	</bank>
+	<ATM>
+		<Key ID="STRS_atm_titleInsert">
+			<English>ATM - Insert Card</English>
+		</Key>
+		<Key ID="STRS_atm_cardsList">
+			<English>&lt;t font='Zeppelin33'&gt;Credit cards:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_selectCard">
+			<English>&lt;br/&gt;&lt;t align='center'&gt;Please insert your bank card.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_cardDesc">
+			<English>&lt;br/&gt;Account: #%1&lt;br/&gt;Registrar: %2</English>
+		</Key>
+		<Key ID="STRS_atm_btnInsert">
+			<English>Insert this card</English>
+		</Key>
+		<Key ID="STRS_atm_titlePIN">
+			<English>ATM - Enter PIN</English>
+		</Key>
+		<Key ID="STRS_atm_loading">
+			<English>&lt;t align='center' color='#ff0000'&gt;Reading card...&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_btnConfirm">
+			<English>Confirm</English>
+		</Key>
+		<Key ID="STRS_atm_enterPIN">
+			<English>&lt;t align='center'&gt;Please enter your PIN.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_wrongPIN">
+			<English>&lt;t align='center' color='#ff0000'&gt;Wrong PIN entered!&lt;br/&gt;%1 attempt(s) left&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_confiscatedCard">
+			<English>&lt;t align='center' color='#ff0000'&gt;You have exceeded the maximal number of attempts.&lt;br/&gt;Your credit card was confiscated.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_noAccess">
+			<English>&lt;t align='center' color='#ff0000'&gt;Access denied.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_warning">
+			<English>ATM - Warning!</English>
+		</Key>
+		<Key ID="STRS_atm_titleOperations">
+			<English>ATM - Transactions</English>
+		</Key>
+		<Key ID="STRS_atm_enterAmount">
+			<English>&lt;t align='center'&gt;Please enter the amount to withdraw.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_toWithdrawOK">
+			<English>&lt;t align='center' color='#33cc00'&gt;To withdraw: %1&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_toWithdrawNoCash">
+			<English>&lt;t align='center' color='#ff0000'&gt;To withdraw: %1&lt;br/&gt;Insuficient funds on the account.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_toWithdrawMaxLimit">
+			<English>&lt;t align='center' color='#ff0000'&gt;To withdraw: %1&lt;br/&gt;Daily limit reached.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_loadingShort">
+			<English>&lt;t color='#ff0000'&gt;Loading...&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_loadingLong">
+			<English>&lt;t align='center' color='#ff0000'&gt;Accessing system, please wait...&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_operationsAcc">
+			<English>&lt;t font='Zeppelin33'&gt;Account #:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_operationsBalance">
+			<English>&lt;t font='Zeppelin33'&gt;Balance:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_operationsLimit">
+			<English>&lt;t font='Zeppelin33'&gt;Daily limit:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_btnWithdraw">
+			<English>Withdraw</English>
+		</Key>
+		<Key ID="STRS_atm_operationSuccess">
+			<English>&lt;t align='center'&gt;&lt;t color='#33cc00'&gt;Transaction successful!&lt;br/&gt;%1 ? withdrawn.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;You may now remove your credit card.&lt;br/&gt;Thank you and have a nice day!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_atm_thanks">
+			<English>ATM - Thank you.</English>
+		</Key>
+	</ATM>
+	
+	<Database>
+		<Key ID="STRS_db_loadingRules">
+			<English>&lt;br/&gt;&lt;t align='center'&gt;Loading server rules.&lt;br/&gt;Please be patient.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_welcomeHeader">
+			<English>Welcome to The New Life</English>
+		</Key>
+		<Key ID="STRS_db_login">
+			<English>Login</English>
+		</Key>
+		<Key ID="STRS_db_loginHeader">
+			<English>Log into an account</English>
+		</Key>
+		<Key ID="STRS_db_welcomeLoginInfo">
+			<English>If you have an account created on this server already you may proceed to log in.</English>
+		</Key>
+		<Key ID="STRS_db_register">
+			<English>Register</English>
+		</Key>
+		<Key ID="STRS_db_registerHeader">
+			<English>Register an account</English>
+		</Key>
+		<Key ID="STRS_db_welcomeRegisterInfo">
+			<English>If you do not yet have an account created on this server you will have to register one.</English>
+		</Key>
+		<Key ID="STRS_db_username">
+			<English>&lt;t color='#ffcc00'&gt;Username:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_usernameRed">
+			<English>&lt;t color='#ff0000'&gt;Username:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_password">
+			<English>&lt;t color='#ffcc00'&gt;Password:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_passwordRed">
+			<English>&lt;t color='#ff0000'&gt;Password:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_haveAcc">
+			<English>Already have an account?</English>
+		</Key>
+		<Key ID="STRS_db_dontHaveAcc">
+			<English>Do not have an account yet?</English>
+		</Key>
+		<Key ID="STRS_db_loginInfo">
+			<English>Please type your username and password into the boxes bellow.&lt;br/&gt;Passwords are case sensitive, usernames are not.</English>
+		</Key>
+		<Key ID="STRS_db_loginMissing">
+			<English>&lt;t align='center' color='#ff0000'&gt;You must enter both the username and the password!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_loginBadName">
+			<English>&lt;t align='center' color='#ff0000'&gt;Such username does not exist!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_loginBadPW">
+			<English>&lt;t align='center' color='#ff0000'&gt;Incorrect password!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_registerInfo">
+			<English>Please type a desired username and a password twice bellow. Passwords are case sensitive and are not encrypted! Their safety cannot be guaranteed!</English>
+		</Key>
+		<Key ID="STRS_db_registerMissing">
+			<English>&lt;t align='center' color='#ff0000'&gt;You must enter the chosen username, password and its verification!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_registerTaken">
+			<English>&lt;t align='center' color='#ff0000'&gt;Sorry, this username is already taken.&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_registerNoMatch">
+			<English>&lt;t align='center' color='#ff0000'&gt;The entered password does not match the verification!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_accCreated">
+			<English>&lt;t font='Zeppelin33' size='1.4' align='center'&gt;Registration successful!&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t align='right' size='0.8'&gt;&lt; Please remember or write down the details.     &lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_accDetails">
+			<English>&lt;t font='Zeppelin33'&gt;&lt;t color='#ffcc00'&gt;Username:&lt;/t&gt; %1&lt;br/&gt;&lt;t color='#ffcc00'&gt;Password:&lt;/t&gt; %2&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_characterInfo">
+			<English>Now you need to create a character which you will play as in the game. Please use reasonable and realistic names, else expect your account to be deleted.</English>
+		</Key>
+		<Key ID="STRS_db_firstName">
+			<English>&lt;t color='#ffcc00'&gt;First name:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_firstNameRed">
+			<English>&lt;t color='#ff0000'&gt;First name:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_surname">
+			<English>&lt;t color='#ffcc00'&gt;Surname:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_surnameRed">
+			<English>&lt;t color='#ff0000'&gt;Surname:&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_charNameMissing">
+			<English>&lt;br/&gt;&lt;t color='#ff0000'&gt;You must fill in both your character's first name and surname!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_charBadInput">
+			<English>&lt;br/&gt;&lt;t color='#ff0000'&gt;Bad input!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_charBannedName">
+			<English>&lt;br/&gt;&lt;t color='#ff0000'&gt;Sorry, you cannot use this name!&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_charExists">
+			<English>&lt;br/&gt;&lt;t color='#ff0000'&gt;Sorry, a character named &lt;t font='Zeppelin33'&gt;%1 %2&lt;/t&gt; already exists :(&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_startNewLife">
+			<English>&lt;t font='Zeppelin33' size='1.4' align='center'&gt;Start a new life&lt;/t&gt;</English>
+		</Key>
+		<Key ID="STRS_db_startNewLifeDesc">
+			<English>Creating a new character allows you to start from the ground zero, all over again. Any actions and decisions you made with any of your other characters will not matter.</English>
+		</Key>
+		<Key ID="STRS_db_welcomeMorning">
+			<English>Good morning, %1 %2!</English>
+		</Key>
+		<Key ID="STRS_db_welcomeAfternoon">
+			<English>Good afternoon, %1 %2!</English>
+		</Key>
+		<Key ID="STRS_db_welcomeEvening">
+			<English>Good evening, %1 %2!</English>
+		</Key>
+		<Key ID="STRS_db_face">
+			<English>%1 - %2</English>
+		</Key>
+	</Database>
+	
+	<Actions>
+		<Key ID="STRS_action_inventory">
+			<English>Inventory</English>
+		</Key>
+	</Actions>
+	
+	<Inventory>
+		<Key ID="STRS_inv_dropItem">
+			<English>You drop %1 %2(s) on the ground</English>
+		</Key>
+		<Key ID="STRS_inv_overWeight">
+			<English>You cannot do this, it will exceed your maximum weight</English>
+		</Key>
+		<Key ID="STRS_inv_undroppable">
+			<English>You cannot drop this</English>
+		</Key>
+	</Inventory>
+	
+	<Wallet>
+		<Key ID="STRS_wallet_headerName">
+			<English>Wallet</English>
+		</Key>
+		<Key ID="STRS_wallet_selectCard">
+			<English>Select an item from the list to the left to get its details.</English>
+		</Key>
+		<Key ID="STRS_wallet_creditcard">
+			<English>Credit card (#%1)</English>
+		</Key>
+		<Key ID="STRS_wallet_desc_creditcard">
+			<English>This credit card belongs to account #%1 and is registered to %2</English>
+		</Key>
+		<Key ID="STRS_wallet_idCard">
+			<English>ID (%1 %2)</English>
+		</Key>
+		<Key ID="STRS_wallet_desc_idCardDetails">
+			<English>Card number: %1&lt;br/&gt;First Name: %2&lt;br/&gt;Surname: %3&lt;br/&gt;Address: %4</English>
+		</Key>
+		<Key ID="STRS_wallet_desc_idCard">
+			<English>This is a identity document.&lt;br/&gt;&lt;br/&gt;</English>
+		</Key>
+	</Wallet>
+	
+	<Licenses>
+		<Key ID="STRS_licenseShop_name">
+			<English>Driver and Vehicle Licensing</English>
+		</Key>
+	
+		<Key ID="STRS_license_name_adrivers">
+			<English>A-category Driver's license</English>
+		</Key>
+		<Key ID="STRS_license_desc_adrivers">
+			<English>This driver's license allows you to drive any A-category vehicle (any type of motorbike)</English>
+		</Key>
+		<Key ID="STRS_license_name_bdrivers">
+			<English>B-category Driver's license</English>
+		</Key>
+		<Key ID="STRS_license_desc_bdrivers">
+			<English>This driver's license allows you to drive any B-category vehicle (any motorized vehicle under 3,5 tons)</English>
+		</Key>
+		<Key ID="STRS_license_name_cdrivers">
+			<English>C-category Driver's license</English>
+		</Key>
+		<Key ID="STRS_license_desc_cdrivers">
+			<English>This driver's license allows you to drive any C-category vehicle (any motorized vehicle over 3,5 tons)</English>
+		</Key>
+		<Key ID="STRS_license_name_ddrivers">
+			<English>D-category Driver's license</English>
+		</Key>
+		<Key ID="STRS_license_desc_ddrivers">
+			<English>This driver's license allows you to drive any D-category vehicle (any vehicle that has more than 8 passager seats)</English>
+		</Key>
+	</Licenses>
+	
+	<Corporations>
+		<Key ID="STRS_corp_firm_help">
+			<English>Firms are your corporations buisnesses, there are many different types of firms such as factories and shops, you can easily access them from here and manage them.</English>
+		</Key>
+		<Key ID="STRS_corp_firm_firmInfoShop">
+			<English>The firms name is %1 and it is a type %2 firm, the firm was created in %3 and the corporation aquired it in %4, the firms current daily income is %5 and expenses are at %6, total daily revenue is %7, It currently staffs %8 managers who are paid %9 daily and %10 employees who are paid %11 daily.</English>
+		</Key>
+		<Key ID="STRS_corp_firm_firmInfoFactory">
+			<English>The firms name is %1 and it is type of factory we aquired it on %2 and was created on %3, it is currently %4, its locked status is %5 and currently has %6 members on the allowed list, it has %7Ц funds, Income is at %8Ц, Expenses is at %9Ц, Revenue is %10Ц.</English>
+		</Key>
+		<Key ID="STRS_corp_register_info">
+			<English>You are now about to register a corporation, the Governor has currently set the registry costs to %1Ц you currently have %2Ц, You must also choose the corporation name that you wish, after creating the corporation it will be made public and you will own %3%4 of its stocks.</English>
+		</Key>
+	</Corporations>
+</Project>
