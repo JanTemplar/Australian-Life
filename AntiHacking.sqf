@@ -1,3 +1,4 @@
+//WEED WAS HERE!!!
 // some generic hack detector
 // by Darky
 _whiteList = ["Weed"];

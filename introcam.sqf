@@ -1,3 +1,4 @@
+//WHY KILL THE INTROCAM!!
 _label = _this select 0;
 
 if (_label == "basicintro") then 

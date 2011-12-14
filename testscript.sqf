@@ -1,3 +1,4 @@
+//REALLY WHATS THE POINT OF THIS SCRIPT
 stolencash = 0;
 _copplayernumber = playersNumber west;
 _copbonus = round(stolencash/_copplayernumber);
