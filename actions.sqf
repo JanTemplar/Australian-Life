@@ -220,7 +220,7 @@ action127 = _role addaction ["Open Door","playerhouse1.sqf",["door2"],1,false,tr
 action128 = _role addaction ["Open Door","playerhouse1.sqf",["door3"],1,false,true,"","player distance door3  <= 2"];
 action129 = _role addaction ["Open Door","playerhouse1.sqf",["door4"],1,false,true,"","player distance door4  <= 2"];
 action130 = _role addaction ["Open Door","playerhouse1.sqf",["door5"],1,false,true,"","player distance door5  <= 2"];
-action131 = _role addaction ["Open Front Garage","playerhouse.sqf",["fgarage",mansion2,1,false,true,"","player distance mansion2a <= 10"];
+action131 = _role addaction ["Open Front Garage","playerhouse.sqf",["fgarage",mansion2],1,false,true,"","player distance mansion2a <= 10"];
 action132 = _role addaction ["Open Closet Door","playerhouse.sqf",["hdoor",mansion2],1,false,true,"","player distance mansion2a <= 10"];
 action134 = _role addaction ["Open Front Door","playerhouse.sqf",["fdoor",mansion2],1,false,true,"","player distance mansion2a <= 6"];
 action135 = _role addaction ["Open Back Door","playerhouse.sqf",["bdoor",mansion2],1,false,true,"","player distance mansion2a <= 6"];
