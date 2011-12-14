@@ -1,0 +1,48 @@
+INV_Lizenzen = 
+
+[
+//["carL",atm1,"Learners license",3000],
+["mayorlic",rta,"Mayor license",1000],
+["boat",rta,localize "STRS_license_boat",2500],
+["boat",atm4,localize "STRS_license_boat",2500],
+["fboat",rta,"Ferry Captain License",2500],
+["esul",atm5,"Emergency Operators License",1000],
+["bus_license",busshop,"Bus License",1000],
+["truck",truckshop,localize "STRS_license_truck",5000],
+["taxi",taxishop,"Taxi License",2000],
+["car",rta,localize "STRS_license_car",2500],
+["car",atm4,localize "STRS_license_car",2500],
+["oil",Oil_1,"Oil processor's license",20000],
+["Baker",Bakery,"Baker's license",10000],
+//["cooker",vending2,"Meat Processing license",10000],
+["cocaine ga1",gangarea1,"GA1 cocaine Drug processor's license",20000],
+["lsd ga1",gangarea1,"GA1 LSD Drug processor's license",15000],
+["heroin ga2",gangarea2,"GA2 Heroin Drug processor's license",20000],
+["lsd ga2",gangarea2,"GA2 LSD Drug processor's license",15000],
+["heroin ga3",gangarea3,"GA3 Heroin Drug processor's license",20000],
+["marijuana ga3",gangarea3,"GA3 Marijuana Drug processor's license",18000],
+["heroin ga4",gangarea4,"GA4 Heroin Drug processor's license",20000],
+["marijuana ga4",gangarea4,"GA4 Marijuana Drug processor's license",18000],
+["air",airshop,localize "STRS_license_air",35000],
+["air",airshop1,localize "STRS_license_air",35000],
+["comair",airshop3,"Commerical Air License",50000],
+//["gunprobationpistol",Licenseflag2,"Probation pistol license",20000],
+["Pistollicense",gunbox2,"Pistol license",40000],
+["riflelicense",vending2,"Hunting license",60000],
+["automatic",gunbox1,"Rifle license",60000],
+["assassinlic",assassinshop,"Assassin Gun license",80000],
+["engineer",dmv,localize "STRS_license_engineer",10000],
+["bomb",tgunbox,"Terrorist Training",650000],
+["probator",copbasic2,localize "STRS_license_probator",10000],
+["patrol_training",copbank,localize "STRS_license_coppatrol",50000],
+["response_training",copbank,localize "STRS_license_copresponse",100000],
+["sobr_training",copswat,localize "STRS_license_copswat",400000],
+["wartraining",warairshop,"War Training",1],
+["wartraining",warboatshop,"War Training",1],
+["cg_boat",atm6,"IL Police Boat License",5000],
+["cg_air",atm6,"IL Coast Air License",20000],
+["air_support_training",copbank,localize "STRS_license_copairsupport",40000]
+
+];
+
+INV_LizenzOwner = [];

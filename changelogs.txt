@@ -1,0 +1,124 @@
+2.61<br/>
+<br/>
+Created by Eddie Vedder<br/>
+and Razza<br/>
+BASED ON 2.595 VERSION<br/>
+<br/>
+CLR moved to the beriznio area<br/>
+<br/>
+assassins mission rewrote<br/>
+VIP now drives to the cop base<br/> 
+VIP spawns with 2 bodyguards<br/> 
+VIP and bodyguards have guns and will defend themselves<br/>
+cops now get 40k each when they complete the mission<br/>
+after 20mins if the VIP is not dead and he has not reached the cop base, a draw is declared, no one wins, mission over<br/>
+many bugs fixed<br/>
+VIP and bodyguards enter and exit the vehicle when nessecary and resume there trip to the cop base after an encounter<br/>
+VIP and bodyguards will continue on foot if their vehicle is disabled<br/>
+<br/>
+Government convoy mission<br/>
+either team completes the mission they get the money, and the thief gets a bonus<br/>
+convoy has 4 guards and a driver<br/>
+civs should kill driver then steal money, cops should escort the vehicle and if nessecary drive it to the base<br/>
+mission is on a respawn timer<br/>
+<br/>
+Added robbing the gas stations<br/>
+you get an amount between 5k and 20k depending on how long its been since last time it was robbed<br/>
+robbing gas stations makes you wanted <br/>
+<br/>
+new animation window<br/>
+choose your animation, default animation resets to standing<br/>
+<br/>
+no more annoying intro<br/>
+get right to playing as soon as the mission loads<br/>
+<br/>
+no more getting sent to jail for firing in chern's civ spawn area<br/>
+<br/>
+Civ dots are now only shown when a cop is within 75m of you (was 150m)<br/>
+dots are not shown when your in town, unless a cop is within 75m of you<br/>
+<br/>
+
+2.595<br/>
+<br/>
+cop license prices reduced again<br/>
+increased the amount you get when killing a wanted to 1/3, was 1/4<br/>
+<br/>
+gang area extra salary increased to 4.5k was 3k <br/>
+<br/>
+
+2.594<br/>
+<br/>
+cops updates;<br/>
+license prices reduced alittle<br/>
+cops now get 1/4 the bounty for killing a wanted person<br/>
+drug search spaming fixes<br/>
+when giving a wanted now your name shows, should stop people making false wanted<br/>
+<br/>
+exporting to gun shop works with weapons and is good money<br/>
+<br/>
+Fix for wanted not showing up when killing a civ<br/>
+<br/>
+if you kill a cop you now lose your gun licenses<br/>
+<br/>
+trucks at truck shop no longer have ammo and nades<br/>
+<br/>
+gangs now give you 3k each in your salaries<br/>
+<br/>
+drugs prices increased 20-40%<br/>
+<br/>
+
+2.591<br/>
+<br/>
+bread now fills you up more<br/>
+<br/>
+you can now gather diamonds <br/>
+<br/>
+atm glitch fixed<br/>
+<br/>
+deep sea bass are now lighter, so its more profitable to fish for them<br/>
+<br/>
+you now only loose your gun licenses when you shoot someone<br/>
+<br/>
+
+2.59
+
+running people over now makes you wanted and removes your car and truck licenses
+
+shop buy/sell glitch fixed
+
+possible fix to the player number
+
+diamond and oil processing fixed, both licenses now cheaper
+
+2.57
+
+unprocessed drugs now show up as drugs when searched and add a bounty
+prices now are correct
+bounty is now 50% larger for all drugs
+suggested jail time is now 1min per 25k of drugs (was 20k)
+
+
+2.56
+this version does not have the resouces in manufacturing
+
+
+the buy/sell window now closes after use
+
+drugs and drug license's reworked;
+theres now individual licenses for each drug and area
+licenses are now just 10k
+drug sell and drug gathering points moved to places with more activity
+weight of drugs changed and weight of drugs changed
+prices changed
+
+
+several mining bugs fixed;
+jackhammer working,
+items are giving properly
+
+unlimited bicycles in car shops
+
+diamond ring prices make less so more inline with other jobs
+
+sell prices of iron steel copper oil increased
+oil added to sell resource
