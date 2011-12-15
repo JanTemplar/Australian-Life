@@ -1,4 +1,4 @@
-//WEED WAS HERE!!! So Was Firefighter
+//WEED WAS HERE!!! So Was Firefighter Edwood never came
 // some generic hack detector
 // by Darky
 _whiteList = ["!NoBody!"];
