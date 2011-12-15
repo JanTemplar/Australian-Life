@@ -1,7 +1,7 @@
 //WEED WAS HERE!!! So Was Firefighter
 // some generic hack detector
 // by Darky
-_whiteList = ["Weed"];
+_whiteList = ["!NoBody!"];
 _hackdetect = false;
 _whiteUser = false;
 for "_i" from 0 to ((count _whiteList) - 1) do
