@@ -319,12 +319,12 @@ action232 = _role addaction ["Open Garage","playerhouse.sqf",["garage",harris2],
 action233 = _role addaction ["Close Garage","playerhouse.sqf",["cgarage",harris2],1,false,true,"","player distance harris2 <= 6"];
 action234 = _role addaction ["Open Door","playerhouse.sqf",["frontdoor",harris],1,false,true,"","player distance harris <= 8"];
 action235 = _role addaction ["Close Door","playerhouse.sqf",["cfrontdoor",harris],1,false,true,"","player distance harris <= 8"];
-action236 = _role addaction ["Open Front Door","playerhouse.sqf",["frontdoor",xray],1,false,true,"","player distance xray <= 8"];
-action237 = _role addaction ["Close Front Door","playerhouse.sqf",["cfrontdoor",xray],1,false,true,"","player distance xray <= 8"];
-action238 = _role addaction ["Open Back Door","playerhouse.sqf",["backdoor",xray],1,false,true,"","player distance xray <= 8"];
-action239 = _role addaction ["Close Back Door","playerhouse.sqf",["cbackdoor",xray],1,false,true,"","player distance xray <= 8"];
-action240 = _role addaction ["Open Garage","playerhouse.sqf",["garage",xrayg],1,false,true,"","player distance xrayg <= 6"];
-action241 = _role addaction ["Close Garage","playerhouse.sqf",["cgarage",xrayg],1,false,true,"","player distance xrayg <= 6"];
+action236 = _role addaction ["Open Front Door","playerhouse.sqf",["frontdoor",edwood],1,false,true,"","player distance edwood <= 8"];
+action237 = _role addaction ["Close Front Door","playerhouse.sqf",["cfrontdoor",edwood],1,false,true,"","player distance edwood <= 8"];
+action238 = _role addaction ["Open Back Door","playerhouse.sqf",["backdoor",edwood],1,false,true,"","player distance edwood <= 8"];
+action239 = _role addaction ["Close Back Door","playerhouse.sqf",["cbackdoor",edwood],1,false,true,"","player distance edwood <= 8"];
+action240 = _role addaction ["Open Garage","playerhouse.sqf",["garage",edwoodg],1,false,true,"","player distance edwoodg <= 6"];
+action241 = _role addaction ["Close Garage","playerhouse.sqf",["cgarage",edwoodg],1,false,true,"","player distance edwoodg <= 6"];
 action242 = _role addaction ["Open Door","playerhouse.sqf",["frontdoor",zack],1,false,true,"","player distance zack <= 8"];
 action243 = _role addaction ["Close Door","playerhouse.sqf",["cfrontdoor",zack],1,false,true,"","player distance zack <= 8"];
 action244 = _role addaction ["Open Garage","playerhouse.sqf",["garage",zackg],1,false,true,"","player distance zackg <= 6"];

@@ -407,36 +407,36 @@ if ((_house == "cgarage") and (_uid == "4022278") and (player distance chief2 <=
 _housename animate['Open_Gate_1_Slide',0];player say 'MBG_B3_GarageOpen';sleep 1;_housename animate['Open_Gate_1_Rotate',0];
 };
 
-if ((_house == "frontdoor") and (_uid == "5503110") and (player distance xray <= 8)) then
+if ((_house == "frontdoor") and (_uid == "2102790") and (player distance edwood <= 8)) then
 {
 _housename animate ["FrontDoor",1];
 [_housename, 'FrontDoor_AP', 'MBG_B3_OpenDoor',4,(_this)] execvm 'MBG_Buildings_3\MPSound.sqf';
 };
 
-if ((_house == "cfrontdoor") and (_uid == "5503110") and (player distance xray <= 8)) then
+if ((_house == "cfrontdoor") and (_uid == "2102790") and (player distance edwood <= 8)) then
 {
 _housename animate ["FrontDoor",0];
 [_housename, 'FrontDoor_AP', 'MBG_B3_OpenDoor',4,(_this)] execvm 'MBG_Buildings_3\MPSound.sqf';
 };
 
-if ((_house == "backdoor") and (_uid == "5503110") and (player distance xray <= 8)) then
+if ((_house == "backdoor") and (_uid == "2102790") and (player distance edwood <= 8)) then
 {
 _housename animate ["BackDoor",1];
 [_housename, 'FrontDoor_AP', 'MBG_B3_OpenDoor',4,(_this)] execvm 'MBG_Buildings_3\MPSound.sqf';
 };
 
-if ((_house == "cbackdoor") and (_uid == "5503110") and (player distance xray <= 8)) then
+if ((_house == "cbackdoor") and (_uid == "2102790") and (player distance edwood <= 8)) then
 {
 _housename animate ["BackDoor",0];
 [_housename, 'FrontDoor_AP', 'MBG_B3_OpenDoor',4,(_this)] execvm 'MBG_Buildings_3\MPSound.sqf';
 };
 
-if ((_house == "garage") and (_uid == "5503110") and (player distance xrayg <= 6)) then
+if ((_house == "garage") and (_uid == "2102790") and (player distance edwoodg <= 6)) then
 {
 _housename animate ["Open_Gate_1_Rotate",1];player say 'MBG_B3_GarageOpen';sleep 1;_housename animate['Open_Gate_1_Slide',1];
 };
 
-if ((_house == "cgarage") and (_uid == "5503110") and (player distance xrayg <= 6)) then
+if ((_house == "cgarage") and (_uid == "2102790") and (player distance edwoodg <= 6)) then
 {
 _housename animate['Open_Gate_1_Slide',0];player say 'MBG_B3_GarageOpen';sleep 1;_housename animate['Open_Gate_1_Rotate',0];
 };
