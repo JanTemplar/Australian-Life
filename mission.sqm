@@ -4882,7 +4882,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1746;
+		items=1753;
 		class Item0
 		{
 			position[]={6070.2065,43.107384,4292.9985};
@@ -22350,10 +22350,79 @@ class Mission
 			skill=0.60000002;
 			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+1.5];";
 		};
+		class Item1746
+		{
+			position[]={7449.6987,5.5340734,7776.4258};
+			id=1977;
+			side="EMPTY";
+			vehicle="MAP_nav_pier_c";
+			skill=0.60000002;
+			init=";this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-2.5];this setVectorUp [0,0,1]";
+		};
+		class Item1747
+		{
+			position[]={7451.1953,5.3639145,7779.1221};
+			azimut=55;
+			id=1978;
+			side="EMPTY";
+			vehicle="Land_MBG_GER_RHUS_4";
+			skill=0.60000002;
+			text="edwood";
+			init=";this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+4.5];";
+		};
+		class Item1748
+		{
+			position[]={7454.0298,7.4687366,7773.209};
+			azimut=55;
+			id=1979;
+			side="EMPTY";
+			vehicle="Land_MBG_Garage_Single_A";
+			skill=0.60000002;
+			text="edwoodg";
+			init=";this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.55];";
+		};
+		class Item1749
+		{
+			position[]={7447.0845,3.4990728,7782.3496};
+			azimut=100;
+			id=1980;
+			side="EMPTY";
+			vehicle="Land_MBG_Beach_Chair_2";
+			skill=0.60000002;
+			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+3.5];";
+		};
+		class Item1750
+		{
+			position[]={7302.7339,0.24936283,7816.3662};
+			id=1981;
+			side="EMPTY";
+			vehicle="C130J_wreck_EP1";
+			skill=0.60000002;
+		};
+		class Item1751
+		{
+			position[]={7446.3804,2.8141966,7786.6431};
+			azimut=55;
+			id=1982;
+			side="EMPTY";
+			vehicle="Land_MBG_Beach_Chair_1";
+			skill=0.60000002;
+			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+4.4];";
+		};
+		class Item1752
+		{
+			position[]={7449.2266,5.4289122,7776.3599};
+			id=1983;
+			side="EMPTY";
+			vehicle="Misc_Wall_lamp";
+			skill=0.60000002;
+			text="edwood1";
+			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+4.5];";
+		};
 	};
 	class Markers
 	{
-		items=408;
+		items=409;
 		class Item0
 		{
 			position[]={4892.8315,121.55,5205.1035};
@@ -25614,7 +25683,7 @@ class Mission
 		};
 		class Item401
 		{
-			position[]={7895.3022,17.5,5316.5918};
+			position[]={7895.3022,17.5,5312.1592};
 			name="FireFighters House";
 			type="mil_dot";
 			colorName="ColorYellow";
@@ -25661,6 +25730,13 @@ class Mission
 		{
 			position[]={7894.7378,17.5,5203.9219};
 			name="Jonziehouse_1_4_1";
+			type="mil_dot";
+			colorName="ColorYellow";
+		};
+		class Item408
+		{
+			position[]={7456.0571,6.0858378,7783.811};
+			name="Eds_house";
 			type="mil_dot";
 			colorName="ColorYellow";
 		};
