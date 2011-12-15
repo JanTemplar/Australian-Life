@@ -84,8 +84,10 @@ R3F_REV_fil_exec_attente_reanimation = [] spawn
 		_joueur switchMove "AinjPpneMstpSnonWrflDnon";
 		
 		// Restauration des armes d'avant le décès
-		{_joueur addMagazine _x;} forEach _chargeurs_avant_mort;
-		{_joueur addWeapon _x;} forEach _armes_avant_mort;
+		    {_joueur addWeapon "ItemMap";} forEach _armes_avant_mort;
+		    {_joueur addWeapon "ItemCompass";} forEach _armes_avant_mort;
+		    {_joueur addWeapon "ItemWatch";} forEach _armes_avant_mort;
+		    {_joueur addWeapon "ItemRadio";} forEach _armes_avant_mort;
 		
 		// OA 1.54+ seulement : restaurer le sac à dos d'avant le décès ou le supprimer s'il n'en avait pas
 		if !(isNil "R3F_REV_FNCT_assigner_sacados") then
@@ -110,14 +112,12 @@ R3F_REV_fil_exec_attente_reanimation = [] spawn
 			}],
 			false
 		];
-		
-		// Ouverture de la boîte de dialogue qui permet le respawn base et de désactivation les interactions in-game
+		// Ouverture de la boîte de dialogue qui permet le respawn base et de désactivation les interactions in-game	
+		sleep 300;
 		closeDialog 0;
 		createDialog "R3F_REV_dlg_attente_reanimation";
 		titleText [STR_R3F_REV_attente_reanimation, "PLAIN"];
-		
-		sleep 5;
-		
+		sleep 5;	
 		// Ramener le nouveau corps au lieu du décès
 		_joueur setVelocity [0, 0, 0];
 		_joueur setDir _direction_avant_mort;
@@ -194,7 +194,7 @@ R3F_REV_fil_exec_attente_reanimation = [] spawn
 		ppEffectDestroy R3F_REV_effet_video_couleur;
 		
 		sleep 0.2;
-		// Sélection de l'arme
+	    // Sélection de l'arme
 		_joueur selectWeapon (primaryWeapon _joueur);
 		
 		R3F_REV_nb_reanimations = R3F_REV_nb_reanimations - 1;
@@ -238,25 +238,9 @@ R3F_REV_fil_exec_attente_reanimation = [] spawn
 			sleep 2;
 			ppEffectDestroy R3F_REV_effet_video_flou;
 			ppEffectDestroy R3F_REV_effet_video_couleur;
-		};
-		if (iscop) then 
+		}
+		else
 		{
-			R3F_REV_nb_reanimations = R3F_REV_CFG_nb_reanimations;
-			
-			// Restauration des armes d'avant le décès
-			removeAllWeapons _joueur;
-			removeAllItems _joueur;
-			{_joueur addMagazine _x;} forEach _chargeurs_avant_mort;
-			{_joueur addWeapon _x;} forEach _armes_avant_mort;
-			_joueur selectWeapon (primaryWeapon _joueur);
-			
-			// OA 1.54+ seulement : restaurer le sac à dos d'avant le décès ou le supprimer s'il n'en avait pas
-			if !(isNil "R3F_REV_FNCT_assigner_sacados") then
-			{
-				[_joueur, _sacados_avant_mort] call R3F_REV_FNCT_assigner_sacados;
-			};
-			if (isciv) then 
-		    {
 			R3F_REV_nb_reanimations = R3F_REV_CFG_nb_reanimations;
 			
 			// Restauration des armes d'avant le décès
@@ -266,13 +250,14 @@ R3F_REV_fil_exec_attente_reanimation = [] spawn
 		    {_joueur addWeapon "ItemCompass";} forEach _armes_avant_mort;
 		    {_joueur addWeapon "ItemWatch";} forEach _armes_avant_mort;
 		    {_joueur addWeapon "ItemRadio";} forEach _armes_avant_mort;
-			};
+			
 			// OA 1.54+ seulement : restaurer le sac à dos d'avant le décès ou le supprimer s'il n'en avait pas
 			if !(isNil "R3F_REV_FNCT_assigner_sacados") then
 			{
 				[_joueur, _sacados_avant_mort] call R3F_REV_FNCT_assigner_sacados;
 			};
-		    // Retour du corps au marqueur de réapparition
+			
+			// Retour du corps au marqueur de réapparition
 			_joueur setVelocity [0, 0, 0];
 			_joueur setPosATL R3F_REV_position_reapparition;
 			
