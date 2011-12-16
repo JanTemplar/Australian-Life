@@ -1,8 +1,3 @@
-////////////////////////////////////
-////			         //
-//      Copyright © TCG         //
-//www.tcgaming.enjin.com       //
-////////////////////////////////
 
 FailCount = 0;
 
@@ -120,6 +115,8 @@ if(!dedicatedserver) then
 //[] execVM "motd.sqf";
 [] execVM "pistolControl.sqf";
 
+
+
 CodeBroadcast = [];
 "CodeBroadcast" addPublicVariableEventHandler
 {
@@ -183,7 +180,11 @@ onKeyPress = compile preprocessFile "onKeyPress.sqf";
 waituntil {!(IsNull (findDisplay 46))};
 (findDisplay 46) displaySetEventHandler ["KeyDown", "_this call onKeyPress"];
 
+_h = [] execVM "InitCarRadio.sqf";
+
+waitUntil{scriptDone  _h};
 };
+
 
 if (isServer) then 
 
@@ -242,3 +243,4 @@ publicvariable "barmoney3";
 //for [{_i=0}, {_i < (count workplacejob_deliveryflagarray)}, {_i=_i+1}] do {(workplacejob_deliveryflagarray select _i) execVM "nomove.sqf"; sleep 0.2;};
 
 };
+
