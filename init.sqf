@@ -27,7 +27,7 @@ StartMoney     	= 25000;
 nopop	   	= true;	
 canuseshopagain = 1;
 
-execVM "R3F_revive\revive_init.sqf";
+///execVM "R3F_revive\revive_init.sqf";
 
 execVM "briefing.sqf";
 call compile preprocessfile "triggers.sqf";
