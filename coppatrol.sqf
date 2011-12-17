@@ -78,7 +78,7 @@ if (_selection == "end") then
 {
 pmissionactive = false;	
 deleteMarkerLocal "patrolmarker";
-player sidechat "Patrol mission ended you must wait 60s to get a new one";
+player sidechat "Patrol mission ended you must wait a while to get a new one";
 patrolwaittime = true;
 sleep 60;
 patrolwaittime = false;
@@ -118,24 +118,28 @@ while {pmissionactive1} do
 
 	if (player distance _markerlocation1 <= 10) then 
 		{
-		player sidechat "Guard this area for 5 minutes, 50m radius, if you leave mission fails";
-		while {_timesec <= 300} do 
+		player sidechat "Guard this area for 5 minutes, make sure you stay within 50m";
+		while {_timesec <= 300} do
 		{
-			sleep 1;
-			_timesec = _timesec + 1;
-			if (player distance _markerlocation1 >= 51) exitWith {
-			player groupchat "You left the area";
-			pmissionactive1 = false;
-			deleteMarkerLocal "patrolmarker1";
-			};
+			sleep 10;
+			_timesec = _timesec + 10;
+			
+			if (player distance _markerlocation1 >= 51) exitWith {player groupchat "You have failed to guard the area"; 
+				pmissionactive1 = false; 
+				deleteMarkerLocal "patrolmarker1";
+				};
 		};
-		sleep 1;
-		deleteMarkerLocal "patrolmarker1";
-		_moneyearned1 = (ceil(5000 * patrolmoneyperkm1));
-		Kontostand = Kontostand + _moneyearned1;
-		player sidechat format["You earned $%1 for guarding the area", _moneyearned1];		
-		player sidechat "You may go take another guard mission";
-		pmissionactive1 = false;
+		
+		if (pmissionactive1) then
+		{
+			deleteMarkerLocal "patrolmarker1";
+			_moneyearned1 = (ceil(5000 * patrolmoneyperkm1));
+			Kontostand = Kontostand + _moneyearned1;
+			player sidechat format["You earned $%1 for guarding the area", _moneyearned1];		
+			player sidechat "You can return to base to be given another guard mission";
+			pmissionactive1 = false;
+		};
+		
 		};
 
 	sleep 5;
@@ -150,7 +154,7 @@ if (_selection == "end1") then
 {
 pmissionactive1 = false;	
 deleteMarkerLocal "patrolmarker1";
-player sidechat "You aborted the mission you must wait 5 Minutes to get a new one";
+player sidechat "You cancelled the mission you must wait a few minutes to get a new one";
 patrolwaittime1 = true;
 sleep 300;
 patrolwaittime1 = false;
