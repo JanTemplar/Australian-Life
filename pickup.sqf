@@ -15,17 +15,16 @@ _exitvar    = 0;
 _time       = round time;
 
 if ((_ownweight + _itemweight) > INV_Tragfaehigkeit) then 
-
 { 
-
-_amount = (floor((INV_Tragfaehigkeit - _ownweight) / (_infos call INV_getitemTypeKg)));
-
-if (_amount <= 0) exitWith {player groupChat localize "STRS_inv_buyitems_maxgewicht"; _exitvar = 1;};
-
+	_amount = (floor((INV_Tragfaehigkeit - _ownweight) / (_infos call INV_getitemTypeKg)));
+	if (_amount <= 0) then 
+	{
+		player groupChat localize "STRS_inv_buyitems_maxgewicht"; 
+		_exitvar = 1;
+	};
 };
 
-if(_exitvar == 1)exitwith{};
-pickingup   = true;
+if(_exitvar == 1)exitwith{pickingup = false};
 
 _object setvariable ["droparray", nil, true];
 
