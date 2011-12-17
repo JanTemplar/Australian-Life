@@ -4882,7 +4882,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1753;
+		items=1754;
 		class Item0
 		{
 			position[]={6070.2065,43.107384,4292.9985};
@@ -22418,6 +22418,16 @@ class Mission
 			skill=0.60000002;
 			text="edwood1";
 			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+4.5];";
+		};
+		class Item1753
+		{
+			position[]={7451.9761,4.8714705,7782.9355};
+			azimut=140;
+			id=1984;
+			side="EMPTY";
+			vehicle="UNBasicAmmunitionBox_EP1";
+			skill=0.60000002;
+			init="this allowdamage false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+2.9];this setVectorUp [0,0,1]; clearMagazineCargo this; clearWeaponCargo this;";
 		};
 	};
 	class Markers
